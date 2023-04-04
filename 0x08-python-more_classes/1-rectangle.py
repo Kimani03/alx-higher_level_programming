@@ -1,31 +1,22 @@
 #!/usr/bin/python3
+""" Rectangle Module """
+
+
 class Rectangle:
-    """Empty class Rectangle
-    """
+    """ Rectangle Class"""
     def __init__(self, width=0, height=0):
-        """Initializes the data.
-        Args:
-            width (int): value of the widht
-            height (int): value of the widht
-        """
-        if not isinstance(width, int):
-            raise TypeError("width must be an integer")
-        if not isinstance(height, int):
-            raise TypeError("height must be an integer")
-        if width < 0:
-            raise ValueError("width must be >= 0")
-        if height < 0:
-            raise ValueError("height must be >= 0")
-        self.__width = width
-        self.__height = height
+        """Initializes rectangle"""
+        self.height = height
+        self.width = width
 
     @property
     def width(self):
-        """getter __width private instance attribute"""
+        """getter function for the private instance attribute width"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """setter function for the private instance attribute width"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -34,11 +25,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """getter __height private instance attribute"""
+        """getter function for the private instance attribute height"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """setter function for the private instance attribute height"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
