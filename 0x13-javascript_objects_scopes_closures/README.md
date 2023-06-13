@@ -1,0 +1,1 @@
+This is my JavaScript - Objects, Scopes and Closures repo.
