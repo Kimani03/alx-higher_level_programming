@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-Add integer model
+Add integer module
 contains:
-add_integer function
+add_integer fucntion
 """
 
 
@@ -10,14 +10,14 @@ def add_integer(a, b=98):
     """
     Adds two integers
     """
-    if type(a) if float:
+    if type(a) is float:
         a = int(a)
-    if type(b) if float:
+    if type(b) is float:
         b = int(b)
 
-    if type(a) is not int or type(a) is float:
+    if not type(a) is int or type(a) is float:
         raise TypeError("a must be an integer")
-    if type(b) is not int or type(b) is float:
+    if not type(b) is int or type(b) is float:
         raise TypeError("b must be an integer")
-    
+
     return a + b
